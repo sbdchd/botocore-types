@@ -1,4 +1,4 @@
-from typing import Any, Dict, Tuple, Union
+from typing import Dict, Tuple, Union
 
 from botocore.compat import OrderedDict as OrderedDict
 from botocore.endpoint import DEFAULT_TIMEOUT as DEFAULT_TIMEOUT
