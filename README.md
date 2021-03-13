@@ -4,6 +4,21 @@ Type stubs for [`botocore`][0].
 
 For boto3 stubs checkout [`mypy_boto3_builder`][1].
 
+## dev
+
+```sh
+s/lint
+```
+
+### publish new version
+
+1. increment version in `pyproject.toml`
+2. publish to pypi
+
+   ```
+   poetry publish --build
+   ```
+
 ## generating stubs
 
 1. stubgen
