@@ -1,0 +1,10 @@
+{
+  "typeCheckingMode": "strict",
+  "reportPrivateUsage": false,
+  "reportMissingModuleSource": false,
+  "reportUnknownVariableType": false,
+  "reportUnknownParameterType": false,
+  "reportUnknownArgumentType": false,
+  "reportUnknownMemberType": false,
+  "reportMissingImports": false
+}
