@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Dict, Tuple, Union
 
 from botocore.compat import OrderedDict as OrderedDict
 from botocore.endpoint import DEFAULT_TIMEOUT as DEFAULT_TIMEOUT
@@ -13,8 +13,33 @@ from botocore.exceptions import InvalidRetryModeError as InvalidRetryModeError
 from botocore.exceptions import (
     InvalidS3AddressingStyleError as InvalidS3AddressingStyleError,
 )
+from typing_extensions import Literal, TypedDict
+
+class _RetryDict(TypedDict):
+    max_attempts: int
+
+class _S3Dict(TypedDict, total=False):
+    use_accelerate_endpoint: bool
+    payload_signing_enabled: bool
+    addressing_style: Literal["auto", "virtual", "path"]
+    us_east_1_regional_endpoint: Literal["regional", "legacy"]
 
 class Config:
     OPTION_DEFAULTS: OrderedDict[str, None]
-    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
-    def merge(self, other_config: Any) -> Any: ...
+    def __init__(
+        self,
+        region_name: str = ...,
+        signature_version: str = ...,
+        user_agent: str = ...,
+        user_agent_extra: str = ...,
+        connect_timeout: Union[float, int] = ...,
+        read_timeout: Union[float, int] = ...,
+        parameter_validation: bool = ...,
+        max_pool_connections: int = ...,
+        proxies: Dict[str, str] = ...,
+        s3: _S3Dict = ...,
+        retries: _RetryDict = ...,
+        client_cert: Union[str, Tuple[str, str]] = ...,
+        inject_host_prefix: bool = ...,
+    ) -> None: ...
+    def merge(self, other_config: Config) -> Config: ...
