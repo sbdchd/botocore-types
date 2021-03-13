@@ -1,4 +1,8 @@
-# botocore-types
+# botocore-types [![PyPI](https://img.shields.io/pypi/v/botocore-types.svg)](https://pypi.org/project/botocore-types/)
+
+Type stubs for [`botocore`][0].
+
+For boto3 stubs checkout [`mypy_boto3_builder`][1].
 
 ## generating stubs
 
@@ -8,3 +12,6 @@
 
 3. replace vendored imports with normal package imports. Don't want to have
    to type `requests` when types for it already exist in `typeshed`.
+
+[0]: https://github.com/boto/botocore
+[1]: https://github.com/vemel/mypy_boto3_builder
