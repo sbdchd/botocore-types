@@ -16,7 +16,9 @@ from botocore.exceptions import (
 from typing_extensions import Literal, TypedDict
 
 class _RetryDict(TypedDict):
+    total_max_attempts: int
     max_attempts: int
+    mode: Literal["legacy", "standard", "adaptive"]
 
 class _S3Dict(TypedDict, total=False):
     use_accelerate_endpoint: bool
