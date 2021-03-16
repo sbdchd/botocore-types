@@ -13,7 +13,8 @@ s/lint
 ### publish new version
 
 1. increment version in `pyproject.toml`
-2. publish to pypi
+2. update `CHANGELOG.md`
+3. publish to pypi
 
    ```
    poetry publish --build
