@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "botocore-types"
-version = "0.2.1"
+version = "0.2.2"
 description = "Type stubs for botocore"
 repository = "https://github.com/sbdchd/botocore-types"
 readme = "README.md"
