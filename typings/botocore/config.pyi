@@ -15,7 +15,7 @@ from botocore.exceptions import (
 )
 from typing_extensions import Literal, TypedDict
 
-class _RetryDict(TypedDict):
+class _RetryDict(TypedDict, total=False):
     total_max_attempts: int
     max_attempts: int
     mode: Literal["legacy", "standard", "adaptive"]
