@@ -2,7 +2,6 @@ from typing import Any, Optional
 
 from botocore import utils as utils
 
-logger: Any
 BOTOCORE_DEFAUT_SESSION_VARIABLES: Any
 DEFAULT_S3_CONFIG_VARS: Any
 DEFAULT_PROXIES_CONFIG_VARS: Any

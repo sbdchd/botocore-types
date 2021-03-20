@@ -20,8 +20,6 @@ from xml.etree import ElementTree as ETree
 from botocore.exceptions import MD5UnavailableError as MD5UnavailableError
 from six.moves import http_client
 
-logger: Any
-
 class HTTPHeaders(http_client.HTTPMessage): ...
 
 file_type: Any

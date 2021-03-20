@@ -7,8 +7,6 @@ from botocore.exceptions import HTTPClientError as HTTPClientError
 from botocore.model import OperationNotFoundError as OperationNotFoundError
 from botocore.utils import CachedProperty as CachedProperty
 
-logger: Any
-
 class EndpointDiscoveryException(BotoCoreError): ...
 
 class EndpointDiscoveryRequired(EndpointDiscoveryException):

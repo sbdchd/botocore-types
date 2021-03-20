@@ -6,7 +6,6 @@ from botocore.exceptions import ConnectionError as ConnectionError
 from botocore.exceptions import EndpointConnectionError as EndpointConnectionError
 from botocore.exceptions import ReadTimeoutError as ReadTimeoutError
 
-logger: Any
 EXCEPTION_MAP: Any
 
 def delay_exponential(base: Any, growth_factor: Any, attempts: Any) -> Any: ...

@@ -4,7 +4,6 @@ from typing import Any, Dict, Tuple
 class NullHandler(logging.Handler):
     def emit(self, record: Any) -> None: ...
 
-log: logging.Logger
 ScalarTypes: Tuple[str, ...]
 BOTOCORE_ROOT: str
 

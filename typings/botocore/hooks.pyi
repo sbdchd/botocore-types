@@ -3,8 +3,6 @@ from typing import Any, NamedTuple, Optional
 from botocore.compat import accepts_kwargs as accepts_kwargs
 from botocore.utils import EVENT_ALIASES as EVENT_ALIASES
 
-logger: Any
-
 class _NodeList(NamedTuple):
     first: Any
     middle: Any

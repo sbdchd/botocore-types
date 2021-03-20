@@ -22,8 +22,6 @@ from botocore.utils import InstanceMetadataFetcher as InstanceMetadataFetcher
 from botocore.utils import SSOTokenLoader as SSOTokenLoader
 from botocore.utils import parse_key_val_file as parse_key_val_file
 
-logger: Any
-
 class ReadOnlyCredentials(NamedTuple):
     access_key: str
     secret_key: str

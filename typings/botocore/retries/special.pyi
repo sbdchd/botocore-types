@@ -2,8 +2,6 @@ from typing import Any
 
 from botocore.retries.base import BaseRetryableChecker as BaseRetryableChecker
 
-logger: Any
-
 class RetryIDPCommunicationError(BaseRetryableChecker):
     def is_retryable(self, context: Any) -> Any: ...
 
