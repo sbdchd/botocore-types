@@ -9,7 +9,6 @@ from botocore.utils import lowercase_dict as lowercase_dict
 from botocore.utils import merge_dicts as merge_dicts
 from botocore.utils import parse_timestamp as parse_timestamp
 
-LOG: Any
 DEFAULT_TIMESTAMP_PARSER = parse_timestamp
 
 class ResponseParserFactory:

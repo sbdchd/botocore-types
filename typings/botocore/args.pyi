@@ -4,7 +4,6 @@ from botocore.config import Config as Config
 from botocore.endpoint import EndpointCreator as EndpointCreator
 from botocore.signers import RequestSigner as RequestSigner
 
-logger: Any
 VALID_REGIONAL_ENDPOINTS_CONFIG: Any
 LEGACY_GLOBAL_STS_REGIONS: Any
 

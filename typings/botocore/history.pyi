@@ -1,7 +1,6 @@
 from typing import Any
 
 HISTORY_RECORDER: Any
-logger: Any
 
 class BaseHistoryHandler:
     def emit(self, event_type: Any, payload: Any, source: Any) -> None: ...

@@ -2,7 +2,6 @@ from typing import Any, Optional
 
 from botocore.exceptions import NoRegionError as NoRegionError
 
-LOG: Any
 DEFAULT_URI_TEMPLATE: str
 DEFAULT_SERVICE_DATA: Any
 

@@ -30,7 +30,6 @@ from botocore.utils import hyphenize_service_id as hyphenize_service_id
 from botocore.utils import percent_encode as percent_encode
 from botocore.utils import switch_host_with_param as switch_host_with_param
 
-logger: Any
 REGISTER_FIRST: Any
 REGISTER_LAST: Any
 VALID_BUCKET: Any

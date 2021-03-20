@@ -4,8 +4,6 @@ from botocore.compat import ensure_bytes as ensure_bytes
 from botocore.compat import ensure_unicode as ensure_unicode
 from botocore.compat import urlparse as urlparse
 
-logger: Any
-
 class Monitor:
     def __init__(self, adapter: Any, publisher: Any) -> None: ...
     def register(self, event_emitter: Any) -> None: ...

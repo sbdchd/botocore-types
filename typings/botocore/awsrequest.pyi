@@ -14,8 +14,6 @@ from requests.packages.urllib3.connectionpool import (
     HTTPSConnectionPool,
 )
 
-logger: Any
-
 class AWSHTTPResponse(HTTPResponse):
     def __init__(self, *args: Any, **kwargs: Any) -> None: ...
 

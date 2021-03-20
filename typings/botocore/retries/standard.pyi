@@ -10,7 +10,6 @@ from botocore.retries.base import BaseRetryableChecker as BaseRetryableChecker
 from botocore.retries.base import BaseRetryBackoff as BaseRetryBackoff
 
 DEFAULT_MAX_ATTEMPTS: int
-logger: Any
 
 def register_retry_handler(client: Any, max_attempts: Any = ...) -> Any: ...
 

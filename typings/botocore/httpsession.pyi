@@ -13,7 +13,6 @@ from botocore.exceptions import SSLError as SSLError
 
 from requests.packages.urllib3 import ProxyManager as ProxyManager
 
-logger: Any
 DEFAULT_TIMEOUT: int
 MAX_POOL_CONNECTIONS: int
 DEFAULT_CA_BUNDLE: Any

@@ -37,7 +37,6 @@ from botocore.exceptions import (
     UnsupportedS3ControlConfigurationError as UnsupportedS3ControlConfigurationError,
 )
 
-logger: Any
 DEFAULT_METADATA_SERVICE_TIMEOUT: int
 METADATA_BASE_URL: str
 METADATA_BASE_URL_IPv6: str

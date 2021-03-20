@@ -4,8 +4,6 @@ from botocore.retries import bucket as bucket
 from botocore.retries import standard as standard
 from botocore.retries import throttling as throttling
 
-logger: Any
-
 def register_retry_handler(client: Any) -> Any: ...
 
 class ClientRateLimiter:
